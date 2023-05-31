@@ -226,7 +226,7 @@ end
 --- proxy has loaded.
 function Client.WaitForProxy(key: DataKey, timeout: number?) : ClientProxy?
     local proxy = Client.GetProxy(key)
-    if proxy ~= nil then return proxy end
+    if proxy ~= nil then return proxy:WaitForLoaded() end
 
     timeout = timeout or 5
     -- Would probably be best to use something like a promise but I'd like to refrain from using external dependencies
