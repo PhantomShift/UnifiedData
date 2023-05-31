@@ -32,8 +32,8 @@ local ScoresProxy = UnifiedData.WaitForProxy(&quot;scores&quot;) :: ScoreTable &
 By overriding the type such as above, `ScoreProxy` will have methods such as [ClientProxy:IsValid]
 and fields such as [ClientProxy.Changed] while still maintaining the tables own fields
 as suggestions."><link data-rh="true" rel="canonical" href="https://PhantomShift.github.io/UnifiedData/api/ClientProxy"><link data-rh="true" rel="alternate" href="https://PhantomShift.github.io/UnifiedData/api/ClientProxy" hreflang="en"><link data-rh="true" rel="alternate" href="https://PhantomShift.github.io/UnifiedData/api/ClientProxy" hreflang="x-default"><link rel="stylesheet" href="/UnifiedData/assets/css/styles.6b33bbd6.css">
-<link rel="preload" href="/UnifiedData/assets/js/runtime~main.82ee337f.js" as="script">
-<link rel="preload" href="/UnifiedData/assets/js/main.efbacc3c.js" as="script">
+<link rel="preload" href="/UnifiedData/assets/js/runtime~main.6a2db225.js" as="script">
+<link rel="preload" href="/UnifiedData/assets/js/main.faeb8add.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -57,13 +57,13 @@ type ScoreTable <span class="token operator">=</span> <span class="token punctua
   and fields such as <a href="/UnifiedData/api/ClientProxy#Changed">ClientProxy.Changed</a> while still maintaining the tables own fields
   as suggestions.
 </p>
-</div></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="properties">Properties<a href="#properties" class="hash-link" aria-label="Direct link to Properties" title="Direct link to Properties">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Changed"><code style="text-decoration:none">Changed</code><a href="#Changed" class="hash-link" aria-label="Direct link to Changed" title="Direct link to Changed">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L39"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->.<!-- -->Changed<!-- -->:<!-- --> </code> <code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/RBXScriptSignal" target="_blank" rel="noopener noreferrer">RBXScriptSignal<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
+</div></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="properties">Properties<a href="#properties" class="hash-link" aria-label="Direct link to Properties" title="Direct link to Properties">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Changed"><code style="text-decoration:none">Changed</code><a href="#Changed" class="hash-link" aria-label="Direct link to Changed" title="Direct link to Changed">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L41"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->.<!-- -->Changed<!-- -->:<!-- --> </code> <code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/RBXScriptSignal" target="_blank" rel="noopener noreferrer">RBXScriptSignal<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
 <p>Fires whenever a value is modified, sends relevant index <a href="/UnifiedData/api/UnifiedData#DataKey">DataKey</a></p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Destroying"><code style="text-decoration:none">Destroying</code><a href="#Destroying" class="hash-link" aria-label="Direct link to Destroying" title="Direct link to Destroying">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L43"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->.<!-- -->Destroying<!-- -->:<!-- --> </code> <code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/RBXScriptSignal" target="_blank" rel="noopener noreferrer">RBXScriptSignal<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Destroying"><code style="text-decoration:none">Destroying</code><a href="#Destroying" class="hash-link" aria-label="Direct link to Destroying" title="Direct link to Destroying">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L45"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->.<!-- -->Destroying<!-- -->:<!-- --> </code> <code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/RBXScriptSignal" target="_blank" rel="noopener noreferrer">RBXScriptSignal<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
 <p>Fires when the relevant data has been removed, sends relevant index <a href="/UnifiedData/api/UnifiedData#DataKey">DataKey</a></p>
-</div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="CloneAsOwned"><code style="text-decoration:none">CloneAsOwned</code><a href="#CloneAsOwned" class="hash-link" aria-label="Direct link to CloneAsOwned" title="Direct link to CloneAsOwned">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L101"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->:</code><code class="green_DgR4">CloneAsOwned</code><code>(</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#DataTable">DataTable</a></code></div><div>
+</div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="CloneAsOwned"><code style="text-decoration:none">CloneAsOwned</code><a href="#CloneAsOwned" class="hash-link" aria-label="Direct link to CloneAsOwned" title="Direct link to CloneAsOwned">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L103"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->:</code><code class="green_DgR4">CloneAsOwned</code><code>(</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#DataTable">DataTable</a></code></div><div>
 <p>Returns a copy of the underlying data which can be freely modified by the client.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Iterate"><code style="text-decoration:none">Iterate</code><a href="#Iterate" class="hash-link" aria-label="Direct link to Iterate" title="Direct link to Iterate">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L121"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->:</code><code class="green_DgR4">Iterate</code><code>(</code><code>) → </code><code class="purple_ieR2">(</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#DataKey">DataKey?,</a></code><code class="purple_ieR2">(</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#AttributeValue">AttributeValue</a></code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/ClientProxy">ClientProxy</a></code><code class="purple_ieR2">)</code><code class="blue_P4bS">?</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Iterate"><code style="text-decoration:none">Iterate</code><a href="#Iterate" class="hash-link" aria-label="Direct link to Iterate" title="Direct link to Iterate">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L123"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->:</code><code class="green_DgR4">Iterate</code><code>(</code><code>) → </code><code class="purple_ieR2">(</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#DataKey">DataKey?,</a></code><code class="purple_ieR2">(</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#AttributeValue">AttributeValue</a></code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/ClientProxy">ClientProxy</a></code><code class="purple_ieR2">)</code><code class="blue_P4bS">?</code></div><div>
 <p>
   Returns an iterator that goes over the values of the proxy.
   For some semblance of consistency, prioritizes number indices first,
@@ -78,11 +78,24 @@ type ScoreTable <span class="token operator">=</span> <span class="token punctua
     <span class="token function">print</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> v<span class="token punctuation">,</span> <span class="token function">typeof</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> DataKey, AttributeValue | ClientProxy, typeof(AttributeValue) | "table"</span>
 <span class="token keyword">end</span>
 </code></pre>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="IsValid"><code style="text-decoration:none">IsValid</code><a href="#IsValid" class="hash-link" aria-label="Direct link to IsValid" title="Direct link to IsValid">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L128"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->:</code><code class="green_DgR4">IsValid</code><code>(</code><code>) → </code><code class="blue_P4bS">boolean</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="IsValid"><code style="text-decoration:none">IsValid</code><a href="#IsValid" class="hash-link" aria-label="Direct link to IsValid" title="Direct link to IsValid">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L130"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->:</code><code class="green_DgR4">IsValid</code><code>(</code><code>) → </code><code class="blue_P4bS">boolean</code></div><div>
 <p>Returns <code>true</code> if the underlying folder still exists, otherwise returns <code>false</code></p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="OnKeyChanged"><code style="text-decoration:none">OnKeyChanged</code><a href="#OnKeyChanged" class="hash-link" aria-label="Direct link to OnKeyChanged" title="Direct link to OnKeyChanged">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L134"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->:</code><code class="green_DgR4">OnKeyChanged</code><code>(</code><div class="inset_uKQm"><div><code>key<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#DataKey">DataKey</a></code><code>,</code></div><div><code>callback<!-- -->: </code><code class="purple_ieR2">(</code><code class="green_DgR4">(</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#AttributeValue">AttributeValue</a></code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/ClientProxy">ClientProxy</a></code><code class="green_DgR4">)</code><code class="blue_P4bS">?</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="purple_ieR2">(</code><code class="purple_ieR2">)</code></div></div><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/RBXScriptConnection" target="_blank" rel="noopener noreferrer">RBXScriptConnection<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="IsLoaded"><code style="text-decoration:none">IsLoaded</code><a href="#IsLoaded" class="hash-link" aria-label="Direct link to IsLoaded" title="Direct link to IsLoaded">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L137"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->:</code><code class="green_DgR4">IsLoaded</code><code>(</code><code>) → </code><code class="blue_P4bS">boolean</code></div><div>
+<p>Returns <code>true</code> if all children of underlying folder have replicated, otherwise returns <code>false</code></p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="WaitForLoaded"><code style="text-decoration:none">WaitForLoaded</code><a href="#WaitForLoaded" class="hash-link" aria-label="Direct link to WaitForLoaded" title="Direct link to WaitForLoaded">​</a></h3><span class="badge_Ba2I" style="color:#f1c40f"><span class="badgeTooltip_cWXP">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_H9D_"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> <!-- -->Yields</span></span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L158"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->:</code><code class="green_DgR4">WaitForLoaded</code><code>(</code><div class="inset_uKQm"><div><code>timeout<!-- -->: </code><code class="blue_P4bS">number?</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+<p>Default of 5</p>
+</span></span></div><div><code>pollRate<!-- -->: </code><code class="blue_P4bS">number?</code><span class="inlineDescription_G7Er">-- <span>
+<p>Default of 1/60</p>
+</span></span></div></div><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/ClientProxy">ClientProxy?</a></code></div><div>
+<p>
+  Returns the ClientProxy immediately if <a href="/UnifiedData/api/ClientProxy#IsLoaded">ClientProxy:IsLoaded</a> resolves to true,
+  otherwise halts the thread until it has fully replicated and then returns the proxy.
+  Returns <code>nil</code> if <a href="/UnifiedData/api/ClientProxy#IsLoaded">ClientProxy:IsLoaded</a> does not resolve within <code>timeout</code> seconds,
+  default of 5 seconds
+</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="OnKeyChanged"><code style="text-decoration:none">OnKeyChanged</code><a href="#OnKeyChanged" class="hash-link" aria-label="Direct link to OnKeyChanged" title="Direct link to OnKeyChanged">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L171"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>ClientProxy<!-- -->:</code><code class="green_DgR4">OnKeyChanged</code><code>(</code><div class="inset_uKQm"><div><code>key<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#DataKey">DataKey</a></code><code>,</code></div><div><code>callback<!-- -->: </code><code class="purple_ieR2">(</code><code class="green_DgR4">(</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#AttributeValue">AttributeValue</a></code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/ClientProxy">ClientProxy</a></code><code class="green_DgR4">)</code><code class="blue_P4bS">?</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="purple_ieR2">(</code><code class="purple_ieR2">)</code></div></div><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/RBXScriptConnection" target="_blank" rel="noopener noreferrer">RBXScriptConnection<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
 <p>Fires given <code>callback</code> when ClientProxy[key] is changed to a new value, passing the new value to <code>callback</code>.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="__iter"><span style="font-style:italic">iterating over <!-- -->ClientProxy</span><a href="#__iter" class="hash-link" aria-label="Direct link to __iter" title="Direct link to __iter">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L146"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="red_AwJO">for</code>  <span><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#DataKey">DataKey,</a></code><code class="purple_ieR2">(</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#AttributeValue">AttributeValue</a></code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/ClientProxy">ClientProxy</a></code><code class="purple_ieR2">)</code> </span> <code class="red_AwJO">in</code>  <code class="green_DgR4">ClientProxy</code>  <code class="red_AwJO">do</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="__iter"><span style="font-style:italic">iterating over <!-- -->ClientProxy</span><a href="#__iter" class="hash-link" aria-label="Direct link to __iter" title="Direct link to __iter">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/PhantomShift/UnifiedData/blob/master/src/Client.lua#L183"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="red_AwJO">for</code>  <span><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#DataKey">DataKey,</a></code><code class="purple_ieR2">(</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/UnifiedData#AttributeValue">AttributeValue</a></code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/UnifiedData/api/ClientProxy">ClientProxy</a></code><code class="purple_ieR2">)</code> </span> <code class="red_AwJO">in</code>  <code class="green_DgR4">ClientProxy</code>  <code class="red_AwJO">do</code></div><div>
 <p>See <a href="/UnifiedData/api/ClientProxy#Iterate">ClientProxy:Iterate</a> for details</p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
@@ -98,7 +111,7 @@ type ScoreTable <span class="token operator">=</span> <span class="token punctua
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 101,
+                &quot;line&quot;: 103,
                 &quot;path&quot;: &quot;src/Client.lua&quot;
             }
         },
@@ -114,7 +127,7 @@ type ScoreTable <span class="token operator">=</span> <span class="token punctua
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 121,
+                &quot;line&quot;: 123,
                 &quot;path&quot;: &quot;src/Client.lua&quot;
             }
         },
@@ -130,7 +143,51 @@ type ScoreTable <span class="token operator">=</span> <span class="token punctua
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 128,
+                &quot;line&quot;: 130,
+                &quot;path&quot;: &quot;src/Client.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;IsLoaded&quot;,
+            &quot;desc&quot;: &quot;Returns `true` if all children of underlying folder have replicated, otherwise returns `false`&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;boolean&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 137,
+                &quot;path&quot;: &quot;src/Client.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;WaitForLoaded&quot;,
+            &quot;desc&quot;: &quot;Returns the ClientProxy immediately if [ClientProxy:IsLoaded] resolves to true,\notherwise halts the thread until it has fully replicated and then returns the proxy.\nReturns `nil` if [ClientProxy:IsLoaded] does not resolve within `timeout` seconds,\ndefault of 5 seconds&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;timeout&quot;,
+                    &quot;desc&quot;: &quot;Default of 5&quot;,
+                    &quot;lua_type&quot;: &quot;number?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;pollRate&quot;,
+                    &quot;desc&quot;: &quot;Default of 1/60&quot;,
+                    &quot;lua_type&quot;: &quot;number?&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;ClientProxy?&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;yields&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 158,
                 &quot;path&quot;: &quot;src/Client.lua&quot;
             }
         },
@@ -157,7 +214,7 @@ type ScoreTable <span class="token operator">=</span> <span class="token punctua
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 134,
+                &quot;line&quot;: 171,
                 &quot;path&quot;: &quot;src/Client.lua&quot;
             }
         },
@@ -173,7 +230,7 @@ type ScoreTable <span class="token operator">=</span> <span class="token punctua
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 146,
+                &quot;line&quot;: 183,
                 &quot;path&quot;: &quot;src/Client.lua&quot;
             }
         }
@@ -184,7 +241,7 @@ type ScoreTable <span class="token operator">=</span> <span class="token punctua
             &quot;desc&quot;: &quot;Fires whenever a value is modified, sends relevant index [DataKey]&quot;,
             &quot;lua_type&quot;: &quot;RBXScriptSignal&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 39,
+                &quot;line&quot;: 41,
                 &quot;path&quot;: &quot;src/Client.lua&quot;
             }
         },
@@ -193,7 +250,7 @@ type ScoreTable <span class="token operator">=</span> <span class="token punctua
             &quot;desc&quot;: &quot;Fires when the relevant data has been removed, sends relevant index [DataKey]&quot;,
             &quot;lua_type&quot;: &quot;RBXScriptSignal&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 43,
+                &quot;line&quot;: 45,
                 &quot;path&quot;: &quot;src/Client.lua&quot;
             }
         },
@@ -203,7 +260,7 @@ type ScoreTable <span class="token operator">=</span> <span class="token punctua
             &quot;lua_type&quot;: &quot;Folder&quot;,
             &quot;private&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 48,
+                &quot;line&quot;: 50,
                 &quot;path&quot;: &quot;src/Client.lua&quot;
             }
         },
@@ -213,7 +270,7 @@ type ScoreTable <span class="token operator">=</span> <span class="token punctua
             &quot;lua_type&quot;: &quot;{[DataKey]: ClientProxy}&quot;,
             &quot;private&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 53,
+                &quot;line&quot;: 55,
                 &quot;path&quot;: &quot;src/Client.lua&quot;
             }
         }
@@ -225,11 +282,11 @@ type ScoreTable <span class="token operator">=</span> <span class="token punctua
         &quot;Client&quot;
     ],
     &quot;source&quot;: {
-        &quot;line&quot;: 32,
+        &quot;line&quot;: 34,
         &quot;path&quot;: &quot;src/Client.lua&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a><ul><li><a href="#Changed" class="table-of-contents__link toc-highlight">Changed</a></li><li><a href="#Destroying" class="table-of-contents__link toc-highlight">Destroying</a></li></ul></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#__iter" class="table-of-contents__link toc-highlight">:__iter</a></li><li><a href="#CloneAsOwned" class="table-of-contents__link toc-highlight">:CloneAsOwned</a></li><li><a href="#IsValid" class="table-of-contents__link toc-highlight">:IsValid</a></li><li><a href="#Iterate" class="table-of-contents__link toc-highlight">:Iterate</a></li><li><a href="#OnKeyChanged" class="table-of-contents__link toc-highlight">:OnKeyChanged</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 PhantomShift. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/UnifiedData/assets/js/runtime~main.82ee337f.js"></script>
-<script src="/UnifiedData/assets/js/main.efbacc3c.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a><ul><li><a href="#Changed" class="table-of-contents__link toc-highlight">Changed</a></li><li><a href="#Destroying" class="table-of-contents__link toc-highlight">Destroying</a></li></ul></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#__iter" class="table-of-contents__link toc-highlight">:__iter</a></li><li><a href="#CloneAsOwned" class="table-of-contents__link toc-highlight">:CloneAsOwned</a></li><li><a href="#IsLoaded" class="table-of-contents__link toc-highlight">:IsLoaded</a></li><li><a href="#IsValid" class="table-of-contents__link toc-highlight">:IsValid</a></li><li><a href="#Iterate" class="table-of-contents__link toc-highlight">:Iterate</a></li><li><a href="#OnKeyChanged" class="table-of-contents__link toc-highlight">:OnKeyChanged</a></li><li><a href="#WaitForLoaded" class="table-of-contents__link toc-highlight">:WaitForLoaded</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 PhantomShift. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/UnifiedData/assets/js/runtime~main.6a2db225.js"></script>
+<script src="/UnifiedData/assets/js/main.faeb8add.js"></script>
 </body>
 </html>
