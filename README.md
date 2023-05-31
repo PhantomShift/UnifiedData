@@ -17,11 +17,11 @@ You can either build the model yourself or grab the `rbxm` from this repo (which
 Build artifacts can be found in the [GitHub Actions tab](https://github.com/PhantomShift/UnifiedData/actions).
 
 Alternatively, the code can be copied manually. If doing so, ensure that the following hierarchy and names is recreated:
- - [UnifiedData](./src/init) `ModuleScript`
-    - [Client](./src/Client) `ModuleScript`
+ - UnifiedData `ModuleScript`
+    - Client `ModuleScript`
     - DataFolder `Folder`
-    - [Server](./src/Server) `ModuleScript`
-    - [Shared](./src/Shared) `ModuleScript`
+    - Server `ModuleScript`
+    - Shared `ModuleScript`
 
 ### Building
 UnifiedData depends on [rojo](https://github.com/rojo-rbx/rojo) for building from source.
