@@ -16,14 +16,15 @@ Intended to be placed in ReplicatedStorage, but should work as long as the same 
 You can either build the model yourself or grab the `rbxm` from this repo (which should be the same as building it yourself if I haven't been lazy).
 Build artifacts can be found in the [GitHub Actions tab](https://github.com/PhantomShift/UnifiedData/actions).
 
-### Building
-UnifiedData depends on [rojo](https://github.com/rojo-rbx/rojo) for building from source.
-```bash
-rojo build -o "UnifiedData.rbxmx"
-```
-If copying the code manually, ensure that the following hierarchy and names is recreated:
+Alternatively, the code can be copied manually. If doing so, ensure that the following hierarchy and names is recreated:
  - [UnifiedData](./src/init) `ModuleScript`
     - [Client](./src/Client) `ModuleScript`
     - DataFolder `Folder`
     - [Server](./src/Server) `ModuleScript`
     - [Shared](./src/Shared) `ModuleScript`
+
+### Building
+UnifiedData depends on [rojo](https://github.com/rojo-rbx/rojo) for building from source.
+```bash
+rojo build -o "UnifiedData.rbxmx"
+```
