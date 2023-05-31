@@ -99,7 +99,7 @@ end
 --- @return DataTable
 --- Returns a copy of the underlying data which can be freely modified by the client.
 function ClientProxyMethods:CloneAsOwned() : DataTable
-    return DeserializeDataTable(self.__folder)
+    return select(2, DeserializeDataTable(self.__folder))
 end
 
 --- @within ClientProxy
