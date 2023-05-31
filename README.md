@@ -4,11 +4,7 @@ The use-case is for when the server has a large but mostly non-volatile amount o
 to all clients and inconvenient to facilitate outside of code.
 
 ## Documentation
-Most of the relevant code in this module is documented, meant to be parsed by [moonwave](https://github.com/evaera/moonwave).
-However at the moment I have not set up any infrastructure for hosting it anywhere.
-Reading the source code should be good enough by nature of how much is written for moonwave to parse,
-and there is an [example](./docs/intro) in `docs/intro.md`, but if you desire something more human-readable,
-you can use moonwave and run `moonwave dev` for a generated documentation site.
+Documentation can be found at https://phantomshift.github.io/UnifiedData/
 
 ## Usage
 Intended to be placed in ReplicatedStorage, but should work as long as the same ModuleScript is visible from both the Server and Client.
