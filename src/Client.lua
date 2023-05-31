@@ -99,7 +99,6 @@ end
 
 --- @within ClientProxy
 --- @return DataTable
---- @error "Infinite Yield" -- Underlying code calls [Instance:WaitForChild]
 --- Returns a copy of the underlying data which can be freely modified by the client.
 function ClientProxyMethods:CloneAsOwned() : DataTable
     return select(2, DeserializeDataTable(self.__folder))
