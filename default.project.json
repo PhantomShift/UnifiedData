@@ -1,0 +1,10 @@
+{
+  "name": "UnifiedData",
+  "tree": {
+    "$path": "src",
+
+    "DataFolder": {
+      "$className": "Folder"
+    }
+  }
+}
