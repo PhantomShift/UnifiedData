@@ -13,7 +13,8 @@ you can use moonwave and run `moonwave dev` for a generated documentation site.
 ## Usage
 Intended to be placed in ReplicatedStorage, but should work as long as the same ModuleScript is visible from both the Server and Client.
 
-You can either build the model yourself or grab the `rbxmx` from this repo (which should be the same as building it yourself if I haven't been lazy).
+You can either build the model yourself or grab the `rbxm` from this repo (which should be the same as building it yourself if I haven't been lazy).
+Build artifacts can be found in the [GitHub Actions tab](https://github.com/PhantomShift/UnifiedData/actions).
 
 ### Building
 UnifiedData depends on [rojo](https://github.com/rojo-rbx/rojo) for building from source.
