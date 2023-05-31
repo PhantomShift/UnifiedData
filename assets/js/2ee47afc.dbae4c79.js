@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[512],{63891:e=>{e.exports=JSON.parse('{"sourceUrl":"https://github.com/PhantomShift/UnifiedData/blob/master","baseUrl":"/UnifiedData/","classOrder":["UnifiedData","ClientProxy","ServerProxy"],"apiCategories":[]}')}}]);
