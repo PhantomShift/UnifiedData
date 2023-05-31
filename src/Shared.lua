@@ -15,7 +15,17 @@ export type AttributeValue = string | boolean | number | UDim | UDim2 | BrickCol
 export type DataKey = number | string
 export type DataTable = {[DataKey]: AttributeValue | DataTable}
 
+local HttpService = game:GetService("HttpService")
+
 local Shared = {}
+
+function Shared.UpdateExpectedChildren(folder: Folder)
+    local childNames = {}
+    for _, c in pairs(folder:GetChildren()) do
+        table.insert(childNames, c.Name)
+    end
+    folder:SetAttribute("__expected_children", HttpService:JSONEncode(childNames))
+end
 
 function Shared.SerializeDataTable(name: DataKey, t: DataTable)
     local root = Instance.new("Folder")
@@ -27,6 +37,7 @@ function Shared.SerializeDataTable(name: DataKey, t: DataTable)
             root:SetAttribute(tostring(key), value)
         end
     end
+    Shared.UpdateExpectedChildren(root)
 
     return root
 end
@@ -35,11 +46,12 @@ function Shared.DeserializeDataTable(folder: Folder)
     local name: DataKey = tonumber(folder.Name) or folder.Name
     local t = {}
     for attr, value: AttributeValue in pairs(folder:GetAttributes()) do
+        if attr == "__expected_children" then continue end
         t[tonumber(attr) or attr] = value
     end
-    for _index, child in pairs(folder:GetChildren()) do
+    for _, child in pairs(folder:GetChildren()) do
         local key, value = Shared.DeserializeDataTable(child)
-        t[key] = value
+        t[tonumber(key) or key] = value
     end
 
     return name, t

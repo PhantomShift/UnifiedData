@@ -1,3 +1,5 @@
+local HttpService = game:GetService("HttpService")
+
 local Shared = require(script.Parent.Shared)
 local Client = {}
 local Proxies = {}
@@ -97,6 +99,7 @@ end
 
 --- @within ClientProxy
 --- @return DataTable
+--- @error "Infinite Yield" -- Underlying code calls [Instance:WaitForChild]
 --- Returns a copy of the underlying data which can be freely modified by the client.
 function ClientProxyMethods:CloneAsOwned() : DataTable
     return select(2, DeserializeDataTable(self.__folder))
@@ -127,6 +130,41 @@ end
 --- Returns `true` if the underlying folder still exists, otherwise returns `false`
 function ClientProxyMethods:IsValid()
     return self.__folder.Parent ~= nil
+end
+
+--- @within ClientProxy
+--- @return boolean
+--- Returns `true` if all children of underlying folder have replicated, otherwise returns `false`
+function ClientProxyMethods:IsLoaded()
+    local expectedChildren = HttpService:JSONDecode(self.__folder:GetAttribute("__expected_children"))
+    if #expectedChildren == 0 then return true end
+    for _, childName in pairs(expectedChildren) do
+        if self.__folder:FindFirstChild(childName) == nil then
+            return false
+        end
+    end
+
+    return true
+end
+
+--- @within ClientProxy
+--- @return ClientProxy?
+--- @yields
+--- @param timeout -- Default of 5
+--- @param pollRate -- Default of 1/60
+--- Returns the ClientProxy immediately if [ClientProxy:IsLoaded] resolves to true,
+--- otherwise halts the thread until it has fully replicated and then returns the proxy.
+--- Returns `nil` if [ClientProxy:IsLoaded] does not resolve within `timeout` seconds,
+--- default of 5 seconds
+function ClientProxyMethods:WaitForLoaded(timeout: number?, pollRate: number?)
+    local loaded = false
+    local endTime = time() + (timeout or 5)
+    local pollRate = pollRate or 1/60
+    repeat
+        task.wait(pollRate)
+        loaded = self:IsLoaded()
+    until loaded or time() > endTime
+    return if loaded then self else nil
 end
 
 --- @within ClientProxy
@@ -185,7 +223,8 @@ end
 --- @yields
 --- @return ClientProxy?
 --- Essentially a wrapper around Client.GetProxy that will block the thread until `timeout` seconds occur (default of 5)
---- if the relevant data doesn't yet exist
+--- if the relevant data doesn't yet exist. May yield for up to 5 seconds longer than given `timeout` to ensure
+--- proxy has loaded.
 function Client.WaitForProxy(key: DataKey, timeout: number?) : ClientProxy?
     local proxy = Client.GetProxy(key)
     if proxy ~= nil then return proxy end
@@ -206,7 +245,7 @@ function Client.WaitForProxy(key: DataKey, timeout: number?) : ClientProxy?
     bv:Destroy()
     onAdded:Disconnect()
 
-    return Client.GetProxy(key)
+    return Client.GetProxy(key):WaitForLoaded()
 end
 
 return Client

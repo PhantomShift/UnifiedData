@@ -1,3 +1,5 @@
+local HttpService = game:GetService("HttpService")
+
 local Shared = require(script.Parent.Shared)
 local Server = {}
 local Proxies = {}
@@ -93,9 +95,10 @@ function ServerProxy.__newindex(self: ServerProxy, key: DataKey, value: (Attribu
     end
     if type(value) == "table" then
         SerializeDataTable(key, value).Parent = self.__folder
-        return
+    else
+        self.__folder:SetAttribute(tostring(key), value :: AttributeValue?)
     end
-    self.__folder:SetAttribute(tostring(key), value :: AttributeValue?)
+    Shared.UpdateExpectedChildren(self.__folder)
 end
 
 --- @within ServerProxy
